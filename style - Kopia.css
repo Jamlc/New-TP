@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  min-width: 480px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.navBackground {
+  position: fixed;
+  left: 0;
+  height: calc(100vh - 60px) ;
+  width: 25%;
+  background-color: rgba(0, 0, 128, 0.5);
+  z-index: 9;
+  min-width: 300px;
+  
+}
+.navigation {
+  list-style-type: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo {
+  height: 76px;
+  width: 244px;
+  margin: 60px auto;
+  border-radius: 122px / 38px;
+  padding-right: 4px;
+}
+#logo img {
+  width: auto;
+  height: 80px;
+  margin-top: -2px;
+}
+.navigation a:hover {
+  background-color: rgba(0, 0, 255, 1);
+}
+.navigation a.activeA {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}
+.item {
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(0, 0, 128, 0.5);
+  transition: background-color 100ms;
+}
+
+header {
+  height: 60px;
+  width: 90%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-top: -60px;
+  align-items: center;
+  background-color: #fff;
+  z-index: 100;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+header li {
+  padding: 15px;
+}
+header span {
+  font-weight: 600;
+  font-size: 1rem;
+  justify-content: flex-start;
+  font-family: 'Poppins', sans-serif;
+}
+.element {
+  scroll-snap-align: start;
+  margin-left: 0vw;
+  height: calc(100vh - 60px) ;
+  background-color: rgb(50, 50, 255);
+  position: relative;
+}
+
+.both-mandatory {
+  scroll-snap-type: both mandatory; 
+}
+.smoothScr {
+  scroll-behavior: smooth; 
+}
+
+.container1 {
+  overflow: auto;
+  height: calc(100vh - 60px) ;
+  margin-top: 60px;
+}
+
+.centerContent {
+  width: 100%;
+  height: calc(100vh - 60px) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  position: relative;
+  opacity: 1;
+  transition: opacity 50ms;
+}
+/*
+.centerContent img {
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+*/
+.img1 {
+  background-image: url("img/przybylski-1360.jpg");
+}
+.img2 {
+  background-image: url("img/monitoring1.jpg");
+}
+.img3 {
+  background-image: url("img/instalacje1e-1360.jpg");
+}
+.img4 {
+  background-image: url("img/przybylski-1360.jpg");
+}
+.delayed {
+  background-image: url();
+  opacity: 0;
+}
+.textCenter {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 45%;
+  padding: 0 3rem 0.5rem 3rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0, 0, 255);
+  background-color: rgba(0, 0, 128, 0.4);
+}
+.hidding {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
+.hidding.hidden {
+  opacity: 1;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  text-shadow: 0px 0px 10px #000;
+  line-height: 0%;
+}
+h5 {
+  font-size: 1rem;
+}
